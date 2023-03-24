@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Document Version="2">
+    <Protection InputFileName="Updater - Public Tool.exe" Options="991176" VMCodeSectionName=".ulpt" WaterMarkName="Legend&apos;s Tool GTFO">
+        <Messages>
+            <Message Id="0">A debugger has been found running in your system.&#x0A;Please close it and restart the Tool.</Message>
+            <Message Id="2">File is corrupted. Please Redownload The Tool.</Message>
+            <Message Id="3">This code requires a valid serial number to run.&#x0A;Program will be terminated.</Message>
+        </Messages>
+        <Folders />
+        <Procedures>
+            <Procedure MapAddress="Legend_s_Public_Tool.Updater::DownloadFileWithProgress(string, string, class System.Windows.Forms.ProgressBar, class System.Windows.Forms.Label, class System.Windows.Forms.Label)" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Updater::backgroundWorker1_DoWork(object, class System.ComponentModel.DoWorkEventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Updater::.ctor()" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Updater::convertVersion(class System.Version, class System.Version)" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Updater::UpdateOrNah()" Options="0" CompilationType="2" />
+        </Procedures>
+        <Objects />
+    </Protection>
+    <DLLBox>
+        <Folders />
+    </DLLBox>
+    <Script>
+        <![CDATA[function GetRandomSectionName()
+   local res = ""
+   for i = 1, 8 do
+      res = res .. "Update<3"
+   end
+   return res
+end
+
+function OnAfterSaveFile()
+   local file = vmprotect.core():outputArchitecture()
+   for i = 1, file:segments():count() do
+      segment = file:segments():item(i)
+      name = GetRandomSectionName()
+      print(string.format("Section \"%s\" is renamed to \"%s\"", segment:name(), name))
+      segment:setName(name)
+   end
+end]]>
+</Script>
+    <LicenseManager />
+</Document>

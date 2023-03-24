@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Document Version="2">
+    <Protection InputFileName="Legend&apos;s Public Tool.exe" Options="991176" VMCodeSectionName=".lpt" WaterMarkName="Legend&apos;s Tool GTFO">
+        <Messages>
+            <Message Id="0">A debugger has been found running in your system.&#x0A;Please close it and restart the Tool.</Message>
+            <Message Id="2">File is corrupted. Please Redownload The Tool.</Message>
+            <Message Id="3">This code requires a valid serial number to run.&#x0A;Program will be terminated.</Message>
+        </Messages>
+        <Folders />
+        <Procedures>
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::UpdateOrNah()" Options="0" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::XamGetUserGamertag(bool)" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::convertVersion(class System.Version, class System.Version)" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::Toast(string, string, string, int32)" Options="0" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::launchGameButton_Click(object, class System.EventArgs)" Options="0" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::dblDSRSemtexButton_Click(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::dblBallistaSemtex_Click(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::dblXPRButton_Click(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::dblSVUButton_Click(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::setCamoButton_Click(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::CreateCamoList()" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::GiveCamo()" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::CheckFirstRun()" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::.ctor()" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::Form1_Load(object, class System.EventArgs)" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::TitleIDToGame()" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::Zone_Bo2()" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::gameChange_Tick(object, class System.EventArgs)" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::Ping_Tick(object, class System.EventArgs)" Options="0" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::allowOrNah_Tick(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::colourfade_Tick(object, class System.EventArgs)" Options="0" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::connectButton_Click(object, class System.EventArgs)" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::CheckConnectivity(string)" Options="0" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::.cctor()" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::setClassNames_Click(object, class System.EventArgs)" Options="0" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::injectGSC_Click(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::uninjectGSC_Click(object, class System.EventArgs)" Options="0" CompilationType="1" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::injectSerenity_Click(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::SpectrumCamo()" Options="0" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::Http_GetLatestBinary(string)" Options="0" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::spoofAccount_Click(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::unspoofAccount_Click(object, class System.EventArgs)" Options="0" CompilationType="2" />
+            <Procedure MapAddress="Legend_s_Public_Tool.Form1::SV_GameSendServerCommand(int32, string)" Options="0" CompilationType="1" />
+        </Procedures>
+        <Objects />
+    </Protection>
+    <DLLBox>
+        <Folders />
+    </DLLBox>
+    <Script>
+        <![CDATA[function GetRandomSectionName()
+   local res = ""
+   for i = 1, 8 do
+      res = res .. "Legend<3"
+   end
+   return res
+end
+
+function OnAfterSaveFile()
+   local file = vmprotect.core():outputArchitecture()
+   for i = 1, file:segments():count() do
+      segment = file:segments():item(i)
+      name = GetRandomSectionName()
+      print(string.format("Section \"%s\" is renamed to \"%s\"", segment:name(), name))
+      segment:setName(name)
+   end
+end]]>
+</Script>
+    <LicenseManager />
+</Document>
