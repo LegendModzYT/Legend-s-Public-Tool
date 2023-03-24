@@ -385,3 +385,6 @@ FodyWeavers.xsd
 /Copy/Updater - Public Tool.exe.vmp
 /Copy/Legend's Public Tool.exe.vmp
 *.unsigned
+/JRPC.snk
+/XDevkit.snk
+/JRPC.snk
