@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="Legend's Public Tool.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Legend's Public Tool" version="2.0.8484.30779" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Legend's Public Tool" version="2.0.8484.31031" language="neutral" processorArchitecture="msil" />
     <commandLine file="Legend's Public Tool.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -67,13 +67,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Legend's Public Tool.exe" size="68096">
-      <assemblyIdentity name="Legend's Public Tool" version="2.0.8484.30779" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Legend's Public Tool" version="2.0.8484.31031" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vpz3cNu6n6cQ7JP/8uJt5qCKT8gegJYPJ8f9oiMzm24=</dsig:DigestValue>
+        <dsig:DigestValue>e46Ly5oeDnI7CRUqql9DaPRsHrVDwju9h5zYg+DWE7E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -125,7 +125,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>rdqNEGg1AvYFA3P/DVZnFyzmgfVDsamgBnYMrzrv4nY=</dsig:DigestValue>
+      <dsig:DigestValue>BIyoUKnxHsBvu7aKeuffdFlcIy/sL22XbvpaZJTQdTs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Published\setup.exe" size="559616">
