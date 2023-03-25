@@ -7,14 +7,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Application Files\Legend's Public Tool_1_0_0_6\Legend's Public Tool.exe.manifest" size="8904">
+    <dependentAssembly dependencyType="install" codebase="Application Files\Legend's Public Tool_1_0_0_6\Legend's Public Tool.exe.manifest" size="8514">
       <assemblyIdentity name="Legend's Public Tool.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AEXRE58IOClxxPwsTD2fVyfbKCkoy8WEnSE/5hqFVtM=</dsig:DigestValue>
+        <dsig:DigestValue>prgiIvJLB+9LmGrOuOs8n7Pz636dnWRtCYyaEh3j2is=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
