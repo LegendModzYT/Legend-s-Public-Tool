@@ -394,3 +394,16 @@ FodyWeavers.xsd
 /Releases/Setup.msi
 /Releases/LegendsPublicTool-1.0.0-full.nupkg
 /Releases/Setup.msi
+/Miscelleaneous
+/SimpleAES.cs
+/EncryptionHelper.cs
+/Components
+/Copy/DLL's
+/Copy
+/AuthForm.cs
+/AuthForm.Designer.cs
+/AuthForm.resx
+/Tool.cs
+/Tool.Designer.cs
+/Tool.resx
+/docs/index.html
