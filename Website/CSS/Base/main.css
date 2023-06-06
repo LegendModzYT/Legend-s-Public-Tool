@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: #5539cc;
+  font-family: 'Nunito', sans-serif;
+}
+
+*::selection {
+  background: #5539cc;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+  html::-webkit-scrollbar {
+    width: .8rem;
+  }
+
+  html::-webkit-scrollbar-track {
+    background: rgb(190, 172, 233);
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: #422ca3;
+  }
+
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#particle-js {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -100;
+}
+
+.socials {
+  position: relative;
+  margin-top: 9rem;
+}
+
+.socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none
+}
+
+.socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px
+}
+
+.social-icons a {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #00d9ff;
+  background-color: #09011b;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+}
+
+.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+  color: #fff;
+  background-color: #0685da
+}
+
+.social-icons a.github:hover {
+  background-color: #0e0e0e
+}
+
+.social-icons a.dev:hover {
+  background-color: #070707
+}
+/* social icons end */
+
+.inthebeginning .thepanelisgood h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.inthebeginning .thepanelisgood h1 span {
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgb(255, 85, 85);
+    pointer-events: none;
+  }
+
+thepanelisgood {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.thepanelisgood {
+  font-family: 'Source Sans Pro';
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 10;
+  width: 200px;
+  height: 220px;
+  background: #eee;
+  top: 50%;
+  left: 50%;
+  margin: -110px 0 0 -100px;
+  padding: 20px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+.thepanelisgood .smol {
+  display: block;
+  margin-bottom: 7px;
+  text-align: center;
+  font-size: .75em;
+}
+
+.thepanelisgood li a:visited {
+    color: #222;
+  }
+.loaded .panel li a {
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+.thepanelisgood li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.thepanelisgood li .svg-wrap, .label {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.thepanelisgood li .svg-wrap {
+    width: 18px;
+    height: 34px;
+    margin-left: 6px;
+  }
+
+li {
+  list-style: none;
+}
+
+.thepanelisgood li .svg-wrap svg {
+    fill: #222;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: fill 0.2s ease;
+    transition: fill 0.2s ease;
+  }
+
+.thepanelisgood h2 {
+  font-weight: 200;
+  font-size: .8em;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
